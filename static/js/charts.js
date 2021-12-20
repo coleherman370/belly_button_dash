@@ -89,7 +89,10 @@ function buildCharts(sample) {
         l: 100,
         r: 100,
         t: 100,
-        b: 100}
+        b: 100},
+      plot_bgcolor: "rgba(0,0,0,0)",
+      paper_bgcolor: "rgba(0,0,0,0)"
+      
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
@@ -111,7 +114,10 @@ function buildCharts(sample) {
       title: 'Bacteria Cultures Per Sample',
       showlegend: false,
       height: 600,
-      xaxis: {title: 'OTU ID'}      
+      xaxis: {title: 'OTU ID'},
+      plot_bgcolor: "rgba(0,0,0,0)",
+      paper_bgcolor: "rgba(0,0,0,0)",
+      hovermode: "closest"      
     };
 
     // 3. Use Plotly to plot the data with the layout.
@@ -143,9 +149,9 @@ function buildCharts(sample) {
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      width: 600, 
-      height: 450, 
-      margin: { t: 0, b: 0 }   
+      automargin: true,
+      plot_bgcolor: "rgba(0,0,0,0)",
+      paper_bgcolor: "rgba(0,0,0,0)"
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
