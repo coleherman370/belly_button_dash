@@ -17,3 +17,7 @@ p{
     text-align: center;
     color: white;
 }
+
+#bar{
+    background-color: "rgba(0,0,0,0)";
+}
